@@ -1,0 +1,62 @@
+.skill__list {
+    list-style: none;
+    display: flex;
+}
+
+.skill__box::before {
+    content: '';
+    display: inline-block;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+  
+  
+    border-radius: 4px;
+    background-color: var(--second-bcg-color);
+  
+  
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  
+  .skill__box:nth-child(1)::before {
+    background-image: url(../images/antenna.svg);
+  }
+  
+  
+  .skill__box:nth-child(2)::before {
+    background-image: url(../images/clock.svg);
+  }
+  
+  
+  .skill__box:nth-child(3)::before {
+    background-image: url(../images/diagram.svg);
+  }
+  
+  
+  .skill__box:nth-child(4)::before {
+    background-image: url(../images/astronaut.svg);
+  }
+  
+
+.skill__box:not(:last-child) {
+    margin-right: 30px;
+}
+
+.skill__list .skill__title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+
+
+.skill__list .skill__text {
+     
+    line-height: 1.71;
+
+   }

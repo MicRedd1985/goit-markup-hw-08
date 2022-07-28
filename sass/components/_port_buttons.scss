@@ -1,0 +1,82 @@
+.buttons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    &>.item:nth-child(n + 2) {
+        margin-left: 8px;
+    }
+}
+
+
+.buttons .portfolio__button {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    border-radius: 4px;
+    border: transparent;
+
+    text-align: center;
+   
+    background-color: var(--second-bcg-color);
+    color: var(--title-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.portfolio__button:hover,
+.portfolio__button:focus {
+    background-color: var(--link-color);
+    color: var(--secondary-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.buttons .portfolio__button.active {
+    background-color: var(--link-color);
+        color: var(--secondary-text-color);
+}
+
+.button.active {
+    width: 73px;
+    height: 38px;
+    left: 495px;
+    top: 174px;
+}
+
+.button.web {
+    width: 128px;
+    height: 38px;
+    left: 576px;
+    top: 174px;
+}
+
+.button.app {
+    width: 145px;
+    height: 38px;
+    left: 712px;
+    top: 174px;
+}
+
+.button.design {
+    width: 103px;
+    height: 38px;
+    left: 865px;
+    top: 174px;
+}
+
+.button.marketing {
+    width: 130px;
+    height: 38px;
+    left: 976px;
+    top: 174px;
+}
