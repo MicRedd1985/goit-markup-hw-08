@@ -4,7 +4,7 @@
   background-color: var(--first-bcg-color);
 
   &__container {
-    @media screen and(max-width:1139px) {
+    @media screen and(max-width:1199px) {
       text-align: center;
     }
     @media screen and(min-width:768px) {
@@ -13,7 +13,7 @@
       align-items: baseline;
     }
 
-    @media screen and(min-width:768px) and(max-width:1139px) {
+    @media screen and(min-width:768px) and(max-width:1199px) {
       flex-wrap: wrap;
       justify-content: space-around;
     }
@@ -25,107 +25,121 @@
   }
 }
 
-
-
 .footer__link {
-    list-style: none;}
+  list-style: none;}
 
 .footer__link .link:hover,
 .footer__link .link:focus {
-    color: var(--link-color);}
+  color: var(--link-color);}
 
+.footer__content {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--first-bcg-color);
+  display: flex
+}
 
-    .footer__address {
-    
-    margin-top: 20px;
-    font-style: normal;
+.footer__container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__address {
+  font-style: normal;
+}
+
+.logo--web {
+  color: var(--secondary-text-color);
 }
 
 
 .footer__link .link {
-    text-decoration: none;
-   display: flex;
-    
-    line-height: 1.71;
-   
-    color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+ display: flex;
+  
+  line-height: 1.71;
+ 
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer__link>.item:nth-child(-n + 2) {
-    margin-bottom: 9px;;
+  margin-bottom: 9px;;
 }
 
 .map__link {
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
 }
 
 .footer__content {
-    background-color: var(--first-bcg-color);
+  background-color: var(--first-bcg-color);
 }
 
 .footer__content .footer__logo {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
-    text-decoration: none;
-    display: inline-flex;
-    margin-bottom: 20px;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  display: inline-flex;
+  margin-bottom: 20px;
 }
 
 .btm-port .active {
-    background-color: var(--link-color);
-    color: var(--secondary-text-color);
-  }
-  
+  background-color: var(--link-color);
+  color: var(--secondary-text-color);
+}
+
 .social {
-    margin-left: 70px;
-  }
+  margin-left: 70px;
+}
 
-  .social__list {
-    display: flex;
-  }
+.social__list {
+  display: flex;
+}
 
-  .social__title {
-    font-weight: 700;
-    
-    font-size: 14px;
-    line-height: 1.14;
-    color: var(--secondary-text-color); 
-    margin-bottom: 20px;
-    text-transform: uppercase;
-  }
+.social__title {
+  font-weight: 700;
   
-  .social__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    color: var(--secondary-text-color); 
-    background-color: rgba(255, 255, 255, 0.1);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }  
-      
-    .social__item:not(:last-child) {
-    margin-right: 10px;
-  }
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--secondary-text-color); 
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
 
-  .social__icon {
-    fill: currentcolor;
-  }
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--secondary-text-color); 
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }  
+    
+  .social__item:not(:last-child) {
+  margin-right: 10px;
+}
 
-  .social__link:hover,
-  .social__link:focus {
-    background-color: #2196f3;
-    color: var(--secondary-text-color);
-  }
+.social__icon {
+  fill: currentcolor;
+}
+
+.social__link:hover,
+.social__link:focus {
+  background-color: #2196f3;
+  color: var(--secondary-text-color);
+}
