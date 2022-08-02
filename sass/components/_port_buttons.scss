@@ -1,16 +1,25 @@
 .buttons {
     list-style: none;
     display: flex;
-    justify-content: center;
+    
     margin-bottom: 50px;
+    flex-wrap: wrap;
+    gap: 8px;
 
-    &>.item:nth-child(n + 2) {
-        margin-left: 8px;
+        
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        margin-bottom: 30px;
     }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+}
 }
 
 
 .buttons .portfolio__button {
+    
     cursor: pointer;
     text-decoration: none;
     font-family: inherit;
@@ -19,7 +28,7 @@
     font-size: 16px;
     line-height: 1.62;
     border-radius: 4px;
-    border: transparent;
+    border: none;
 
     text-align: center;
    
