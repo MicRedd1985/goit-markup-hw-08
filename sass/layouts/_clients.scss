@@ -35,3 +35,17 @@
     border-color: var(--link-color);
   }
 }
+
+.clients__list {
+  $indent: 30px;
+  margin: calc(-1 * $indent / 2);
+
+  @media screen and(min-width:480px) {
+    display: flex;
+  }
+
+  @media screen and(min-width:480px) and(max-width:1199px) {
+    flex-wrap: wrap;
+  }
+}
+
