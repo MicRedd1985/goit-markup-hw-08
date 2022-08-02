@@ -1268,10 +1268,6 @@ textarea {
   font-style: normal;
 }
 
-.logo--web {
-  color: var(--secondary-text-color);
-}
-
 .footer__link .link {
   text-decoration: none;
   display: -webkit-box;
