@@ -1,7 +1,29 @@
 
 .skill__list {
+  @media screen and(min-width:480px) {
+    // width: 100vw;
+  }
+
+  @media screen and(min-width:767px) {
+    display: flex;
+  }
+
+  @media screen and(max-width:1199px) {
+    flex-wrap: wrap;
+
+    $indent: 30px;
+
+    margin: calc(-1 * $indent / 2);
+  }
+
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
   @media screen and (min-width: 768px) {
+    
     --items: 2;
 }
 
@@ -12,13 +34,9 @@
 
 .skill_box   {
     @media screen and(max-width:1200px) {
-      $basis: 100%;
       
-      $indent: 30px;
-      $items: 2;
-      $amount: 2;
-      margin: calc($indent / 2);
-      flex-basis: calc(($basis - $indent * $items) / $amount);
+    margin: 15px;
+    
     }
   }
 
@@ -43,16 +61,7 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    @media screen and(min-width:480px) {
-      width: 450px;
-    }
-  
-    @media screen and(min-width:768px) {
-      width: 354px;
-    }
-    @media screen and(min-width:1200px) {
-      width: 270px;
-    }
+   
   }
   
   
@@ -76,31 +85,44 @@
   }
   
 
-.skill__box:not(:last-child) {
-    margin-right: 30px;
-}
+
 
 .skill__title {
     margin-bottom: 10px;
+    
 
     font-size: 14px;
     line-height: 1.14;
     
     text-transform: uppercase;
     color: var(--title-text-color);
+    text-align: center;
+    
 }
 
 
 .skill__text {
-     
+
+  
   font-weight: 400;
   line-height: 1.71;
 
+  @media screen and(min-width:480px) {
+    width: 450px;
+  }
+
+  @media screen and(min-width:768px) {
+    width: 354px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 270px;
+  }
+
    }
+
+
 .skill_title {
   
-    margin-bottom: 10px;
-    text-transform: uppercase;
 
     @media screen and(max-width:767px) {
       text-align: center;

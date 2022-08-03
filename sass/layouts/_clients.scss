@@ -1,16 +1,9 @@
 .clients-icon__list {
   display: flex;
-  font-size: 36px;
-  line-height: 1.16;
-  margin-top: 50px;
-  margin-bottom: 94px;
-  padding: 0;
-  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
-.clients-icon__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .clients__icon {
   fill: currentColor;
 }
@@ -36,16 +29,5 @@
   }
 }
 
-.clients__list {
-  $indent: 30px;
-  margin: calc(-1 * $indent / 2);
 
-  @media screen and(min-width:480px) {
-    display: flex;
-  }
-
-  @media screen and(min-width:480px) and(max-width:1199px) {
-    flex-wrap: wrap;
-  }
-}
 
