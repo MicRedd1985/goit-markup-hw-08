@@ -34,12 +34,15 @@
 }
 
 .menu-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: #ffffff;
   width: 100%;
   display: none;
+
+  @media screen and (min-width: 768px) {
+    display: none;}
 }
 
 .menu-container.is-open {

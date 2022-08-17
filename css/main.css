@@ -141,7 +141,7 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-width: 528px;
+  min-width: 450px;
   min-height: 581px;
   padding: 40px;
   background-color: var(--secondary-text-color);
@@ -516,12 +516,17 @@ textarea {
 }
 
 .menu-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: #ffffff;
   width: 100%;
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
 }
 
 .menu-container.is-open {
